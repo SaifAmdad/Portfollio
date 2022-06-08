@@ -566,8 +566,39 @@ footer a{
 
 
 @media (max-width:600px) {
+    
+    .discription{
+        font-size: 15px ;
+    }
     .resume-date{
         visibility: hidden;
+    }
+        .contact-img{
+        height: 15px;
+        width: 15px;
+    }
+
+    .contact-name{
+        font-size: 20px;
+    }
+    
+    .contact-desc{
+        font-size: 12px;
+    }
+
+    .resume-points{
+        font-size: 22px;
+        margin-left: -10px;
+    }
+
+    .resume-list li{
+        font-size: 15px;
+        margin-left: 0;
+    }
+
+    .resume-desc{
+        font-size: 12px;
+        margin-left: 0;
     }
     
 }
