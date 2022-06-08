@@ -189,7 +189,7 @@ nav ul li a:hover{
 #profesion{
     font-size: 25px;
     color: #008080;
-    font-family: 'Karla', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
 }
 
@@ -311,7 +311,10 @@ nav ul li a:hover{
 /* ******* about end */
 
 /* ******* Resume starts ***************** */
-
+#resume-name{
+    color: #383838;
+    margin-left: 40px;
+}
 .resume-points{
     color: #008080;
     font-size: 27px;
@@ -519,11 +522,11 @@ footer a{
     }
 
     #hero-name{
-        font-size: 20px;
+        font-size: 27px;
     }
 
     #profesion{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     /* *** media nav end */
@@ -566,14 +569,22 @@ footer a{
 
 
 @media (max-width:600px) {
-    
-    .discription{
-        font-size: 15px ;
+
+    #hero-name{
+        margin: 26% -22px 0 -22px;
+        font-size: 18px;
+        word-spacing: 2px;
+        letter-spacing: inherit;
+    }
+
+    #resume-name{
+        margin-left: 0px;
     }
     .resume-date{
         visibility: hidden;
     }
-        .contact-img{
+
+    .contact-img{
         height: 15px;
         width: 15px;
     }
@@ -601,5 +612,8 @@ footer a{
         margin-left: 0;
     }
     
+    .discription{
+        font-size: 15px ;
+    }
 }
 /* ************ Media end ****** */
