@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+/* 
+How add
+font-family: 'Lato', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,400&family=Lato:wght@300&display=swap");
+/* 
+How add
+font-family: 'Karla', sans-serif;  
+font-family: 'Lato', sans-serif;  (ittalic)
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #c2bfbfbb;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.active {
+  background-color: teal;
+  color: #e4f9f5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.comon-hr {
+  width: 50px;
+  border-bottom: 3px solid #e4f9f5;
+  margin: 1px auto 27px auto;
+}
+
+section {
+  border-bottom: 3px solid teal;
+}
+
+.section-name {
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #008080;
+  margin: 27px 0 2px 0;
+}
+
+.discription {
+  color: #4d4d4d;
+  font-size: 20px;
+  margin: 15px 0 20px 0;
+}
+
+.divider {
+  height: 120px;
+}
+
+/* ******* Gloabal end ****************/
+
+/* ****** Header stat ************* */
+/* ******** with Logo and Nav ********** */
+header {
+  background-color: #e4f9f5;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  border-bottom: 5px solid teal;
+  overflow: hidden;
+  z-index: 999;
+}
+
+#logo {
+  display: inline-block;
+  /* color: teal;
+  font-size: 40px;
+  padding: 20px 0;
+  font-family: "Lato", sans-serif; */
+}
+#logo img {
+  width: 80px;
+}
+
+nav {
+  float: right;
+  margin-top: 32px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #008080;
+  padding: 5px 10px;
+  border: 1px solid #e4f9f5;
+  border-radius: 8px;
+  font-family: "Karla", sans-serif;
+}
+
+nav ul li a:hover {
+  background-color: #008080;
+  color: #ffffff;
+}
+
+#back-top {
+  /* height: 30px;
+    width: 30px; */
+  background-color: teal;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 50%;
+}
+
+#back-top a img {
+  width: 25px;
+  height: 25px;
+  padding: 5px 7px;
+  margin: 5px;
+}
+
+/* ********** header end ********* */
+
+/* ****************************************************** */
+
+/* ********** hero Starts ********* */
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../photos/imgs/desktop.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  animation: slider 12s infinite linear;
+  overflow: hidden;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url("../photos/imgs/coding.jpg");
+  }
+
+  30% {
+    /* background-image: url('../photos/snow-hil.jpg'); */
+    background-image: url("../photos/imgs/Keyboard.jpg");
+  }
+
+  60% {
+    /* background-image: url('../photos/hil.jpg'); */
+    background-image: url("../photos/imgs/laptop.jpg");
+  }
+
+  90% {
+    background-image: url("../photos/imgs/desktop.jpg");
+  }
+}
+
+/* ****** Slider end ******* */
+
+.overlay {
+  background-color: #000000c9;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#hero-name {
+  font-size: 35px;
+  color: #e4f9f5;
+  margin-top: 26%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+#profesion {
+  font-size: 25px;
+  color: #008080;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+}
+#LearningSubj {
+  color: #995e06;
+  font-size: 35px;
+}
+/* ****** hero end ******* */
+
+/* ******* about starts */
+
+#about {
+  margin-top: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.grid-container > div {
+  padding: 0 15px;
+}
+
+/* *********** skills start ********************************/
+
+.skills-prog {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.skills-prog div {
+  padding: 0 10px;
+}
+
+.skills-prog > div ul li {
+  list-style: none;
+  margin: 50px 0;
+  position: relative;
+  font-weight: bolder;
+  color: black;
+}
+
+.skills-prog > div ul li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: #e4f9f5;
+  border-radius: 11px;
+  width: 100%;
+  height: 15px;
+}
+
+.skills-prog > div ul li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: teal;
+  border-radius: 11px;
+  width: 0;
+  height: 15px;
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.skillsImg {
+  height: 20px;
+}
+
+#html::after {
+  animation: html 1s forwards;
+}
+
+@keyframes html {
+  to {
+    width: 90%;
+    background-color: #008080;
+  }
+}
+
+#css::after {
+  animation: css 1s forwards;
+}
+
+@keyframes css {
+  to {
+    width: 80%;
+    background-color: #008080;
+  }
+}
+
+#js::after {
+  animation: js 1s forwards;
+}
+
+@keyframes js {
+  to {
+    width: 60%;
+    background-color: #008080;
+  }
+}
+
+#mern::after {
+  animation: mern 3s infinite linear;
+}
+
+@keyframes mern {
+  to {
+    width: 100%;
+    background-color: #008080;
+  }
+}
+
+.skills-value,
+.resume-date {
+  float: right;
+  font-size: 13px;
+}
+
+/* *********** skills end */
+
+/* ******* about end */
+
+/* ******* Resume starts ***************** */
+#resume-name {
+  color: #383838;
+  margin-left: 40px;
+}
+.resume-points {
+  color: #008080;
+  font-size: 27px;
+}
+
+.resume-list {
+  list-style-type: square;
+}
+
+.resume-list li {
+  color: #383838;
+  margin-left: 30px;
+  padding: 10px 0 0 5px;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.resume-desc {
+  margin-left: 40px;
+  color: #383838;
+  font-size: 14px;
+}
+/* ********** Resume end ***** */
+
+/* ***** service start */
+
+/* #service{
+
+} */
+
+.service-card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 25px;
+}
+
+.service-card > div {
+  padding: 5px;
+  margin: 5px 10px;
+  background-color: #ffffff88;
+  color: black;
+  border: #e4f9f5 solid 1px;
+  box-shadow: #4d4d4d 5px 3px 5px;
+}
+
+.service-card div:hover {
+  box-shadow: #3b3b3be3 8px 5px 15px;
+}
+
+.service-card div img {
+  width: 100%;
+}
+
+.service-card div h3,
+.service-card div p {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+/* ***** service end */
+
+/* ********* contact start ******** */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.contact-grid div {
+  margin: 5px 10px;
+}
+
+.contact-img {
+  height: 30px;
+  width: 30px;
+  float: left;
+  padding: 12px;
+  margin-top: 20px;
+  margin-right: 8px;
+  background-color: #e4f9f5;
+  border-radius: 50%;
+}
+
+.contact-img:hover {
+  background-color: teal;
+}
+
+.contact-name {
+  float: left;
+  padding: 0 10px;
+  margin-top: 25px;
+  color: #4d4d4d;
+  font-size: 30px;
+}
+
+.contact-desc {
+  color: #4d4d4d;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+/*  social start */
+#social {
+  width: fit-content;
+  margin: 29px auto;
+}
+#social img {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  background-color: #e4f9f5;
+  margin: 0 5px;
+  border-radius: 15px;
+}
+
+#social img:hover {
+  background-color: teal;
+}
+
+/*  social end */
+
+/* message form start */
+form input,
+textarea {
+  padding: 8px;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 17px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 12px;
+  background-color: #008080;
+  border: none;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+button:hover {
+  background-color: #e4f9f5;
+}
+
+/*   message form end */
+
+/* ********* contact end ********/
+
+/* *********** footer start **********/
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-top: 3px solid #008080;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* * footer end  *******/
+
+/* *********** Media Start ******* */
+@media (max-width: 800px) {
+  header {
+    height: auto;
+    position: relative;
+  }
+  #logo {
+    display: block;
+    /* text-align: center; */
+  }
+
+  nav {
+    float: none;
+    width: 100%;
+    position: static;
+    top: 0;
+  }
+  nav ul li {
+    display: block;
+  }
+
+  nav ul li a {
+    display: block;
+    text-align: center;
+    background-color: #008080;
+    color: white;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  nav ul li a:hover {
+    background-color: #4d4d4d;
+    color: #008080;
+  }
+
+  #hero-name {
+    font-size: 27px;
+  }
+
+  #profesion {
+    font-size: 20px;
+  }
+
+  /* *** media nav end */
+
+  /* ***** media about start */
+
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+
+  /* about end */
+
+  /*  skills start */
+  .skills-prog {
+    grid-template-columns: 100%;
+  }
+  /*   skills end */
+
+  /* **** service start */
+  .service-card {
+    grid-template-columns: 100%;
+  }
+
+  .service-card > div {
+    padding: 10px;
+    margin: 15px 20px;
+  }
+  /* **** service end */
+
+  /* **** contact start */
+  .contact-grid {
+    grid-template-columns: 100%;
+  }
+  /* ***** contact end */
+}
+
+@media (max-width: 600px) {
+  #hero-name {
+    margin: 26% -22px 0 -22px;
+    font-size: 18px;
+    word-spacing: 2px;
+    letter-spacing: inherit;
+  }
+
+  #resume-name {
+    margin-left: 0px;
+  }
+  .resume-date {
+    visibility: hidden;
+  }
+
+  .contact-img {
+    height: 15px;
+    width: 15px;
+  }
+
+  .contact-name {
+    font-size: 20px;
+  }
+
+  .contact-desc {
+    font-size: 12px;
+  }
+
+  .resume-points {
+    font-size: 22px;
+    margin-left: -10px;
+  }
+
+  .resume-list li {
+    font-size: 15px;
+    margin-left: 0;
+  }
+
+  .resume-desc {
+    font-size: 12px;
+    margin-left: 0;
+  }
+
+  .discription {
+    font-size: 15px;
+  }
+}
+/* ************ Media end ****** */
